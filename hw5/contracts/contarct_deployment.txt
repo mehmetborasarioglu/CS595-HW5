@@ -1,0 +1,13 @@
+address of my whirlwind contract: 0x1c21971F115C592ED6584bF53E97484031319143
+
+deposit transaction: 0xbdd8426f4b1b1a3a2b848fe3c898bfb1d25a804493d582b91d667a53c92cb716
+
+withdraw transaction: 0x228769e298bd6ff6af86f5adc58d9c2636bd50e6c1c838bc126ebacc4d1a97b1
+
+
+scripts used:
+
+echo "\"0x$(od -An -v -t x1 ./target/proof | tr -d ' \n' | sed 's/^.\{264\}//')\""
+
+echo "\"0x$(od -An -v -t x1 ./target/proof | tr -d ' \n' | sed 's/^.\{136\}//')\""
+
